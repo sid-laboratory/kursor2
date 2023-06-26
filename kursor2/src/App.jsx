@@ -1,7 +1,12 @@
 import { TypeAnimation } from 'react-type-animation';
-import YouTubePlayer from './YoutubePlayer';
-function App() {
+import Youtube from 'react-youtube';
 
+function App() {
+  
+  const opts = {
+    height: '390',
+    width: '640',
+  };
 
   return (
     <>
@@ -36,7 +41,7 @@ function App() {
      </div>
 
      <div className="flex items-center justify-center pt-10 pb-10">
-      <YouTubePlayer/>
+      <Youtube videoId='l0k3ZfJ336Q' opts={opts}/>
      </div>
     
     </div>
